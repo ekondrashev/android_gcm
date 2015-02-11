@@ -1,0 +1,6 @@
+/Users/ekondrashev/AndroidStudioProjects/android-gcm-client/app/build/intermediates/classes/debug
+/Users/ekondrashev/AndroidStudioProjects/android-gcm-client/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-74f2239539b15273517840ef519b808acf8fe095.jar
+/Users/ekondrashev/AndroidStudioProjects/android-gcm-client/app/build/intermediates/pre-dexed/debug/json-simple-1.1.1-2715cbf39ddb954780b7ebcb2ed98fe45396a839.jar
+/Users/ekondrashev/AndroidStudioProjects/android-gcm-client/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-45b65eab95a4de30900ca5cb30cbacc93bb4712b.jar
+/Users/ekondrashev/AndroidStudioProjects/android-gcm-client/app/build/intermediates/pre-dexed/debug/classes-d33b574078b0e0f09e644a3fa43e9ddd1488f84b.jar
+/Users/ekondrashev/AndroidStudioProjects/android-gcm-client/app/build/intermediates/pre-dexed/debug/classes-91748df1f0d9805edff0e784ade9129ec62d1014.jar
