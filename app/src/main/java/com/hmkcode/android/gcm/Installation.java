@@ -2,7 +2,9 @@ package com.hmkcode.android.gcm;
 
 import android.content.Context;
 
-import com.hmkcode.android.gcm.rest.Device;
+import com.hmkcode.android.gcm.exception.RegistrationException;
+
+import org.notifyme.currency.model.Device;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -15,12 +17,12 @@ public class Installation {
     private static final String INSTALLATION = "INSTALLATION";
 
     public synchronized static void registerOnFirstLaunch(Context context) throws RegistrationException {
-        new File(context.getFilesDir(), INSTALLATION).delete();
+//        new File(context.getFilesDir(), INSTALLATION).delete();
         if(!installationFileExists(context)) {
             try {
                 HttpClient client = new HttpClient();
                 Device d = new Device(id(context));
-                client.postJson(d.toJSONString());
+                client.post("/android/regdev", d.toJSONString());
             } catch (IOException e) {
                 new File(context.getFilesDir(), INSTALLATION).delete();
                 throw new RegistrationException(e);
@@ -67,6 +69,7 @@ public class Installation {
         FileOutputStream out = new FileOutputStream(installation);
         try {
             String id = UUID.randomUUID().toString();
+//            String id = "7d69e8d0-d7bf-407a-918a-e5d0d7872116";
             out.write(id.getBytes());
         } finally {
             out.close();

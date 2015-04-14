@@ -1,0 +1,9 @@
+apply plugin: 'java'
+
+dependencies {
+    testCompile 'junit:junit:4.+'
+    compile ('com.googlecode.json-simple:json-simple:+') {
+            exclude module: 'junit'
+        }
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
